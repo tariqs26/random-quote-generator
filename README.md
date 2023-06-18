@@ -2,21 +2,18 @@
 
 ```sql
 # authors
-
 CREATE TABLE authors (
   id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   author varchar(255) NOT NULL UNIQUE
 );
 
 # categories
-
 CREATE TABLE categories (
   id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   category varchar(255) NOT NULL UNIQUE
 );
 
 # quotes
-
 CREATE TABLE quotes (
   id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   quote varchar(255) NOT NULL  UNIQUE,
