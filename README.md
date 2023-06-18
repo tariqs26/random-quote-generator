@@ -1,3 +1,19 @@
+# Random Quote Generator
+
+## Description
+
+This is a simple web app that generates random quotes from a database.
+
+## Technologies
+
+| Name                                    | Description         |
+| --------------------------------------- | ------------------- |
+| [Next.js](https://nextjs.org/)          | Fullstack framework |
+| [DrizzleORM](https://orm.drizzle.team/) | ORM                 |
+| [MySQL](https://www.mysql.com/)         | Database            |
+| [PlanetScale](https://planetscale.com/) | Database hosting    |
+| [TailwindCSS](https://tailwindcss.com/) | CSS framework       |
+
 ## Models
 
 ```sql
