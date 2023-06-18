@@ -4,7 +4,7 @@ import { drizzle } from "drizzle-orm/planetscale-serverless";
 import { quotes, authors, categories } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
-export default async function getQuotes(): Promise<Quote[]> {
+export default async function getQuotes() {
   const db = drizzle(connect(config));
 
   const results: Quote[] = await db

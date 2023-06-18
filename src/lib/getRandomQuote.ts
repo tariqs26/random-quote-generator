@@ -7,7 +7,7 @@ const prevQuoteObj = {
   },
 };
 
-export default async function getRandomQuote(): Promise<Quote> {
+export default async function getRandomQuote() {
   const results = await getQuotes();
 
   let randomIndex = prevQuoteObj.prev;
