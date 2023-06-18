@@ -1,12 +1,8 @@
-import { connect } from "@planetscale/database";
-import { drizzle } from "drizzle-orm/planetscale-serverless";
 import { eq } from "drizzle-orm";
-import { config } from "@/db/config";
+import { db } from "@/db/connection";
 import { quotes, authors, categories } from "@/db/schema";
 
 export default async function getQuotes() {
-  const db = drizzle(connect(config));
-
   const results: Quote[] = await db
     .select({
       quote: quotes.quote,
