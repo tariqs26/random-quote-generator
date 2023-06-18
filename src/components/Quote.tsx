@@ -21,7 +21,7 @@ export default function Quote({ quote }: { quote: Quote }) {
   const [fade, setFade] = useState(false);
   return (
     <section
-      className={`flex flex-col justify-center items-center transition-opacity ease-in-out duration-1000 ${
+      className={`flex flex-col justify-center items-center transition-opacity ease-in-out duration-500 ${
         fade ? "opacity-0" : "opacity-100"
       }`}
     >
