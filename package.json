@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "introspect": "drizzle-kit introspect:mysql",
-    "migrate": "drizzle-kit migrate:mysql",
+    "migrate": "drizzle-kit generate:mysql",
     "push": "drizzle-kit push:mysql"
   },
   "dependencies": {
