@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "introspect": "drizzle-kit introspect:mysql",
+    "migrate": "drizzle-kit migrate:mysql",
+    "push": "drizzle-kit push:mysql"
   },
   "dependencies": {
     "@planetscale/database": "^1.7.0",
