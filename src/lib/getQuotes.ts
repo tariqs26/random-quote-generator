@@ -1,8 +1,8 @@
 import { connect } from "@planetscale/database";
-import { config } from "@/db/config";
 import { drizzle } from "drizzle-orm/planetscale-serverless";
-import { quotes, authors, categories } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { config } from "@/db/config";
+import { quotes, authors, categories } from "@/db/schema";
 
 export default async function getQuotes() {
   const db = drizzle(connect(config));
