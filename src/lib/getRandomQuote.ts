@@ -1,8 +1,4 @@
-import { connect } from "@planetscale/database";
-import { config } from "@/db/config";
-import { drizzle } from "drizzle-orm/planetscale-serverless";
-import { quotes, authors, categories } from "@/db/schema";
-import { eq } from "drizzle-orm";
+import getQuotes from "./getQuotes";
 
 const prevQuoteObj = {
   prev: 1,
@@ -12,17 +8,7 @@ const prevQuoteObj = {
 };
 
 export default async function getRandomQuote(): Promise<Quote> {
-  const db = drizzle(connect(config));
-
-  const results: Quote[] = await db
-    .select({
-      quote: quotes.quote,
-      author: authors.author,
-      category: categories.category,
-    })
-    .from(quotes)
-    .innerJoin(authors, eq(quotes.authorId, authors.id))
-    .innerJoin(categories, eq(quotes.categoryId, categories.id));
+  const results = await getQuotes();
 
   let randomIndex = prevQuoteObj.prev;
 
