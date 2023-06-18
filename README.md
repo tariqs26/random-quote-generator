@@ -24,34 +24,27 @@ CREATE TABLE quotes (
 );
 ```
 
-## Installation
-
-First, run the development server:
+## Installation and Available Commands
 
 ```bash
+# install dependencies
+npm i
+
+# run the development server (localhost:3000)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-View the project at [http://localhost:3000](http://localhost:3000)
-
-## Available Commands
-
-```bash
 # build for production
 npm run build
-# or
-yarn build
-# or
-pnpm build
 
-# start the server
+# start the production server
 npm run start
-# or
-yarn start
-# or
-pnpm start
+
+# introspect the database (pull DDL from existing db and generate <schema.ts>)
+npm run introspect
+
+# migrate changes to the database
+npm run migrate
+
+# push changes to the database (does not create migrations)
+npm run push
 ```
