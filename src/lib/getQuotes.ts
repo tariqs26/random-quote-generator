@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import { db } from "@/db/connection";
+import db from "@/db/connection";
 import { quotes, authors, categories } from "@/db/schema";
 
 export default async function getQuotes() {

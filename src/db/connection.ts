@@ -7,4 +7,4 @@ const config = {
   password: process.env.DATABASE_PASSWORD!,
 };
 
-export const db = drizzle(connect(config));
+export default drizzle(connect(config));
