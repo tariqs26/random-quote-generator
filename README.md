@@ -1,9 +1,5 @@
 # Random Quote Generator
 
-## Description
-
-This is a simple web app that generates random quotes from a database.
-
 ## Technologies
 
 | Name                                    | Description         |
@@ -40,12 +36,16 @@ CREATE TABLE quotes (
 );
 ```
 
-## Installation and Available Commands
+## Installation
 
 ```bash
-# install dependencies
-npm i
+npm I
+```
 
+
+## Available Commands
+
+```bash
 # run the development server (localhost:3000)
 npm run dev
 
